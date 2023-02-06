@@ -35,15 +35,21 @@ console.log(reverseString2("Hi my name is Andrei"));
 function mergeSortedArrays(arr1, arr2) {
     if (arr1.length === 0) {
         return arr2
-    } else if (arr2.length === 0) {
+    } 
+    if (arr2.length === 0) {
         return arr1
     }
     const sortedMerged = [];
     let ele1 = arr1[0];
-    let ele2 = arr2[0] 
+    let ele2 = arr2[0];
 
-    
+    while(ele1 || ele2) {
+    if (ele2 === undefined || ele1 < ele2) {
+        sortedMerged.push(ele1)
+    }
+    return sortedMerged;
 
+}
 
 
 
