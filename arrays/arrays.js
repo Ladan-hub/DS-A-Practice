@@ -15,7 +15,10 @@ function reverseString (str) {
       
     }
     return reversed.join("")
-
 }
 
-console.log(reverseString("Hi my name is Andrei"));
+function reverseString2(str) {
+    return str.split("").reverse().join("")
+}
+
+console.log(reverseString2("Hi my name is Andrei"));
