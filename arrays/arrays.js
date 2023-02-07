@@ -52,11 +52,18 @@ function mergeSortedArrays(array1, array2) {
           array1Item = array1[i];
           i++;
         }
-    } 
+    else {
+        mergedArray.push(array2Item);
+        array2Item = array2[j];
+        j++;
+      }
+   
 
 
      
 
+
+}
 
 }
 
@@ -65,5 +72,4 @@ function mergeSortedArrays(array1, array2) {
 
 
 
-
-// console.log(mergeSortedArrays([0,3,4,31], [3,4,6,30]));
+console.log(mergeSortedArrays([0,3,4,31], [3,4,6,30]));
