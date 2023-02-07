@@ -46,6 +46,17 @@ function mergeSortedArrays(array1, array2) {
     let array1Item = array1[0];
     let array2Item = array2[0];
 
+    while (array1Item || array2Item){
+        if(array2Item === undefined || array1Item < array2Item){
+          mergedArray.push(array1Item);
+          array1Item = array1[i];
+          i++;
+        }
+    } 
+
+
+     
+
 
 }
 
