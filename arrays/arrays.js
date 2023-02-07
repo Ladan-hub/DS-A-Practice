@@ -68,3 +68,14 @@ return mergedArray;
 
 
 console.log(mergeSortedArrays([0,3,4,31], [3,4,6,30]));
+
+
+// Shorter version but uses array methods!
+// const mergeSortedArrays = (arr1, arr2) => {
+//     let mergedArrs = arr1.concat(arr2);
+//     const sortedMergedArrs = mergedArrs.sort((a,b) => a-b);
+//     return sortedMergedArrs;
+//   }
+  
+//   console.log(mergeSortedArrays([0,3,4,31], [4,6,30]))
+  
