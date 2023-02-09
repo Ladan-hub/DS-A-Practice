@@ -81,4 +81,13 @@ console.log(reverseString2("Hi my name is Andrei"));
 // 2. 
 function mergeSortedArrays(arr1, arr2) {
   const result = [];
+  let i = 0; 
+  let j = 0; 
+
+  while(i < arr1.length && j < arr2.length) {
+    if (arr1[i] < arr2[j]) {
+      result.push(arr1[i])
+    }
+  }
+
 }
