@@ -32,42 +32,41 @@ console.log(reverseString2("Hi my name is Andrei"));
 // Can one of the arrays be empty? yes!
 // Should the same exact numbers that are repeated in both arrays be added to the 3rd array twice? yes!
 
-function mergeSortedArrays(array1, array2) {
+// 1. 
+// function mergeSortedArrays(array1, array2) {
 
- if(array1.length === 0) {
-    return array2;
-  }
-  if(array2.length === 0) {
-    return array1;
-  }
+//  if(array1.length === 0) {
+//     return array2;
+//   }
+//   if(array2.length === 0) {
+//     return array1;
+//   }
 
-    const mergedArray = [];
-    let array1Item = array1[0];
-    let array2Item = array2[0];
+//     const mergedArray = [];
+//     let array1Item = array1[0];
+//     let array2Item = array2[0];
 
-    while (array1Item || array2Item){
-        if(array2Item === undefined || array1Item < array2Item){
-          mergedArray.push(array1Item);
-          array1Item = array1[i];
-          i++;
-        }
-    else {
-        mergedArray.push(array2Item);
-        array2Item = array2[j];
-        j++;
-      }
+//     while (array1Item || array2Item){
+//         if(array2Item === undefined || array1Item < array2Item){
+//           mergedArray.push(array1Item);
+//           array1Item = array1[i];
+//           i++;
+//         }
+//     else {
+//         mergedArray.push(array2Item);
+//         array2Item = array2[j];
+//         j++;
+//       }
 
-}
-return mergedArray;
+// }
+// return mergedArray;
 
-}
-
-
-
+// }
 
 
+// console.log(mergeSortedArrays([0,3,4,31], [3,4,6,30]));
 
-console.log(mergeSortedArrays([0,3,4,31], [3,4,6,30]));
+
 
 
 // Shorter version but uses array methods!
@@ -79,3 +78,7 @@ console.log(mergeSortedArrays([0,3,4,31], [3,4,6,30]));
   
 //   console.log(mergeSortedArrays([0,3,4,31], [4,6,30]))
   
+// 2. 
+function mergeSortedArrays(arr1, arr2) {
+  const result = [];
+}
