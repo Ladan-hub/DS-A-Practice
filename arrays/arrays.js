@@ -41,7 +41,6 @@ console.log(reverseString2("Hi my name is Andrei"));
 //   if(array2.length === 0) {
 //     return array1;
 //   }
-
 //     const mergedArray = [];
 //     let array1Item = array1[0];
 //     let array2Item = array2[0];
@@ -57,26 +56,11 @@ console.log(reverseString2("Hi my name is Andrei"));
 //         array2Item = array2[j];
 //         j++;
 //       }
-
 // }
 // return mergedArray;
-
 // }
-
-
 // console.log(mergeSortedArrays([0,3,4,31], [3,4,6,30]));
 
-
-
-
-// Shorter version but uses array methods!
-// const mergeSortedArrays = (arr1, arr2) => {
-//     let mergedArrs = arr1.concat(arr2);
-//     const sortedMergedArrs = mergedArrs.sort((a,b) => a-b);
-//     return sortedMergedArrs;
-//   }
-  
-//   console.log(mergeSortedArrays([0,3,4,31], [4,6,30]))
   
 // 2. 
 function mergeSortedArrays(arr1, arr2) {
@@ -106,5 +90,19 @@ function mergeSortedArrays(arr1, arr2) {
   return result;
 
 }
+console.log(mergeSortedArrays([0,2,4,6,8,10], []))
 
-console.log(mergeSortedArrays([0,3,4,31], [4,6,30]))
+// 3. 
+// Shorter version but uses array methods!
+// const mergeSortedArrays = (arr1, arr2) => {
+//     let mergedArrs = arr1.concat(arr2);
+//     const sortedMergedArrs = mergedArrs.sort((a,b) => a-b);
+//     return sortedMergedArrs;
+//   }
+  
+//   console.log(mergeSortedArrays([0,3,4,31], [4,6,30]))
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
