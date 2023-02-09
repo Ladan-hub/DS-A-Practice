@@ -84,7 +84,7 @@ function mergeSortedArrays(arr1, arr2) {
   let i = 0; 
   let j = 0; 
 
-  while(i < arr1.length && j < arr2.length) {
+  while(i < arr1.length || j < arr2.length) {
     if (arr2[j] === undefined || arr1[i] < arr2[j] ) {
       result.push(arr1[i]);
       i++
