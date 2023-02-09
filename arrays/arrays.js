@@ -85,7 +85,7 @@ function mergeSortedArrays(arr1, arr2) {
   let j = 0; 
 
   while(i < arr1.length && j < arr2.length) {
-    if (arr1[i] < arr2[j] && arr2[i] !== undefined) {
+    if (arr2[j] === undefined || arr1[i] < arr2[j] ) {
       result.push(arr1[i]);
       i++
     } else {
@@ -97,3 +97,5 @@ function mergeSortedArrays(arr1, arr2) {
   return result;
 
 }
+
+console.log(mergeSortedArrays([0,3,4,31], [4,6,30]))
