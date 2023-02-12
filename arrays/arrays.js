@@ -131,6 +131,7 @@ Output: [0,1]
 
 */
 
+// Time Complexity is O(n2) which is really bad 
 
 var twoSum = function(nums, target) {
   for (let i = 0; i < nums.length; i++) {
@@ -143,4 +144,14 @@ var twoSum = function(nums, target) {
 
           }
           }
+};
+
+
+
+var twoSum = function(nums, target) {
+  for (let i = 0; i < nums.length - 1; i++) {
+      if (nums[i] + nums[i+1] === target) {
+          return [i, i+1]
+      }
+  }
 };
