@@ -146,8 +146,7 @@ var twoSum = function(nums, target) {
           }
 };
 
-
-
+// O(n)
 var twoSum = function(nums, target) {
   let seen = {};
   for (let i = 0; i < nums.length; i++) {
@@ -163,3 +162,17 @@ var twoSum = function(nums, target) {
 };
 
 console.log(twoSum([2,7,11,15], 9))
+
+// Solution using JS Map 
+
+var twoSum = function(nums, target) {
+  let hash_map = new Map();
+  for (let i = 0; i < nums.length; i++) {
+      let complement = target - nums[i];
+      if (hash_map.has(complement)) {
+          return [hash_map.get(complement), i];
+      }
+      hash_map.set(nums[i], i);
+  }
+  return [];
+};
