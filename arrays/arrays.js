@@ -177,7 +177,7 @@ var twoSum = function(nums, target) {
   return [];
 };
 
-// Contains Duplicate
+// 4. Contains Duplicate
 
 // Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
@@ -195,3 +195,9 @@ var containsDuplicate = function(nums) {
   return false;
       
   };
+
+
+// Maximum Subarray 
+
+// Given an integer array nums, find the subarray with the largest sum, and return its sum.
+
