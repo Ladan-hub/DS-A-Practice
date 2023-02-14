@@ -217,3 +217,9 @@ function addToArray(location, element, arr) {
     console.log("ERROR")
   }
 }
+
+// Sum Array
+
+/* Write a function sumArray(array) that takes in an array of numbers and returns the total sum of all the numbers. */
+
+
