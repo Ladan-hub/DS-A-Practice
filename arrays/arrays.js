@@ -208,5 +208,12 @@ var containsDuplicate = function(nums) {
 /* Write a function that takes a location, either "FRONT" or "BACK" and adds an element to either the front or back of the given array. If location is anything besides "FRONT" or "BACK", print an error. Your function should not return anything and should mutate the original array. (Hint: Look up the JavaScript functions: push/pop/shift/unshift) */
 
 function addToArray(location, element, arr) { 
-  
+
+  if(location == "FRONT") {
+    arr.unshift(element)
+  } else if(location == "BACK") {
+    arr.push(element)
+  } else {
+    console.log("ERROR")
+  }
 }
