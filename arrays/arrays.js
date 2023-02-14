@@ -201,3 +201,12 @@ var containsDuplicate = function(nums) {
 
 // Given an integer array nums, find the subarray with the largest sum, and return its sum.
 
+
+
+// Add To Array 
+
+/* Write a function that takes a location, either "FRONT" or "BACK" and adds an element to either the front or back of the given array. If location is anything besides "FRONT" or "BACK", print an error. Your function should not return anything and should mutate the original array. (Hint: Look up the JavaScript functions: push/pop/shift/unshift) */
+
+function addToArray(location, element, arr) { 
+  
+}
