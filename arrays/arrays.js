@@ -235,3 +235,12 @@ function sumArray(array) {
 
 console.log(sumArray([5, 6, 4])); // => 15
 console.log(sumArray([7, 3, 9, 11])); // => 30
+
+
+// Even Numbers
+
+/* Write a function evenNumbers(max) that takes in a number as an arg. The function should return an array containing all positive, even numbers that are less than max. 
+
+Define this function using function expression syntax. */
+
+
