@@ -244,3 +244,15 @@ console.log(sumArray([7, 3, 9, 11])); // => 30
 Define this function using function expression syntax. */
 
 
+let evenNumbers = function(max) {
+  let arr = []; 
+  
+  for(let i = 1; i < max; i++){
+    if(i % 2 === 0) {
+      arr.push(i); 
+    }
+  }
+  return arr; 
+}
+
+
