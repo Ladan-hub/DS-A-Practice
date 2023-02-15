@@ -296,3 +296,9 @@ function fizzBuzz(max) {
 //     }
 //   }
 // }
+
+// Is Substring
+
+/* Write a function isSubstring that takes in two strings, searchString and subString. The function should return true if subString is a part of thesearchString, regardless of upper or lower case, and false if otherwise. */
+
+
