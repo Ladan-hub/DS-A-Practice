@@ -301,4 +301,9 @@ function fizzBuzz(max) {
 
 /* Write a function isSubstring that takes in two strings, searchString and subString. The function should return true if subString is a part of thesearchString, regardless of upper or lower case, and false if otherwise. */
 
+function isSubstring(searchString, subString) {
+  let lowerSearchStr = searchString.toLowerCase();
+  let lowerSubStr = subString.toLowerCase();
 
+  return lowerSearchStr.indexOf(lowerSubStr) !== -1;
+}
