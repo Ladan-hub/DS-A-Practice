@@ -333,3 +333,10 @@ function doubler(numbers) {
 
 console.log(doubler([1, 2, 3, 4])); // => [2, 4, 6, 8]
 console.log(doubler([7, 1, 8])); // => [14, 2, 16]
+
+
+// Is Substring
+
+/* Write a function isSubstring that takes in two strings, searchString and subString. The function should return true if subString is a part of thesearchString, regardless of upper or lower case, and false if otherwise. */
+
+
