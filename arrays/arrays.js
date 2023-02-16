@@ -350,3 +350,10 @@ function isSubstring(searchString, subString) {
 console.log(isSubstring("The cat went to the store", "he cat went")); // => true
 console.log(isSubstring("Time to program", "time")); // => true
 console.log(isSubstring("Jump for joy", "joys")); // => false
+
+
+// Move Zeroes 
+
+/* Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+Note that you must do this in-place without making a copy of the array. */
