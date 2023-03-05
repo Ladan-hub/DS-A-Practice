@@ -31,3 +31,24 @@ function appendToList(head, value) {
   
   // const myList = createLinkedList(3)
   // console.log(appendToList(myList, 5))
+
+
+  // Write a function that deletes a node from a linked list given its value.
+
+  function deleteNode(head, val) {
+    if (!head) {
+      return null;
+    }
+    if (head.val === val) {
+      return head.next;
+    }
+    let curr = head;
+    while (curr.next) {
+      if (curr.next.val === val) {
+        curr.next = curr.next.next;
+        return head;
+      }
+      curr = curr.next;
+    }
+    return head;
+  }
