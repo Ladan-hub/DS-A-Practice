@@ -422,4 +422,8 @@ var moveZeroes = function(nums) {
     return odds
 }
 
+// Merge Two Sorted Arrays
+
+// Implement a function that merges two sorted arrays into another sorted array. Name it mergeArrays(arr1, arr2).
+
 
