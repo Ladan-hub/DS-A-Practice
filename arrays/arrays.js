@@ -403,3 +403,23 @@ var moveZeroes = function(nums) {
      
   // keep this function call here 
   console.log(LongestWord(readline()));
+
+
+  // Remove Even Integers From an Array
+
+  // Implement a function removeEven(arr), which takes an array arr in its input and removes all the even elements from a given array.
+
+  function removeEven(arr) {
+    let odds = []
+    for (let i = 0; i < arr.length; i++) {
+        let ele = arr[i];
+        if (ele % 2 === 1) {
+            odds.push(ele)
+
+        }
+    }
+
+    return odds
+}
+
+
