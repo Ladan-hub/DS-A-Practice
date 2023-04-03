@@ -109,6 +109,6 @@ app.put('/users/:id', (req,res) => {
 
         return res.json(results)
     })
-
-
 })
+
+// Create a REST API endpoint to delete an existing user from the "users" table. The endpoint should accept a parameter for the user ID and delete the corresponding record from the "users" table. Upon success, the endpoint should return a message indicating that the user has been deleted.
