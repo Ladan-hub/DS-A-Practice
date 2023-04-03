@@ -32,5 +32,9 @@ app.get('/users', (req,res) => {
 
 
 
+// Create a REST API endpoint to retrieve a single user by their ID.
+// The endpoint should accept a parameter for the user ID and return a JSON object containing the user's ID, username, and email address.
+
+
 
 
