@@ -100,7 +100,7 @@ app.put('/users/:id', (req,res) => {
     const {username, email} = req.body;
     const sql = 'UPDATE USERS SET USERNAME=?, EMAIL=? WHERE ID=?';
 
-    connection.query(sql, [username,email], (error,results) => {
+    connection.query(sql, [username,email, id], (error,results) => {
         if (error) return res.status(500).send('Error Retrieving the Data from the Database.');
 
         if (results.length === 0) {
