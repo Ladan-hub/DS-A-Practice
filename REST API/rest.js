@@ -111,4 +111,22 @@ app.put('/users/:id', (req,res) => {
     })
 })
 
-// Create a REST API endpoint to delete an existing user from the "users" table. The endpoint should accept a parameter for the user ID and delete the corresponding record from the "users" table. Upon success, the endpoint should return a message indicating that the user has been deleted.
+// Create a REST API endpoint to delete an existing user from the "users" table. 
+//The endpoint should accept a parameter for the user ID and delete the corresponding record from the "users" table. 
+//Upon success, the endpoint should return a message indicating that the user has been deleted.
+
+
+app.delete('/users/:id', (req,res) => {
+    const id = req.params.id;
+
+    const sql = 'DELETE FROM USERS WHERE ID = ?';
+
+    connection.query(sql, [id], (error,results) => {
+
+        if (error) return res.status(500).send('Error Deleting the Data from the Database.');
+
+        return res.status(200).send('Resource was deleted successfully.');
+    })
+})
+
+
