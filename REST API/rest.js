@@ -148,10 +148,10 @@ productId fk -> Product
 Price int 
 
 
-CreateProduct
-CreateOrders
-GetAllOrderByProductName
-GetAllProductsbyUsername
+// CreateProduct
+// CreateOrders
+// GetAllOrderByProductName
+// GetAllProductsbyUsername
 
 
 const express = require('express');
@@ -192,6 +192,7 @@ app.post('/products', (req,res) => {
 
 // CreateOrders
 
+app.use(express.json());
 app.post('/orders', (req,res) => {
     const { customerId, productId, price } = req.body;
 
@@ -202,8 +203,24 @@ app.post('/orders', (req,res) => {
 
         res.status(201).send('Order Created Successfully!')
     })
-
 })
 
 
 
+// GetAllOrderByProductId
+
+app.get('/orders/:productId', (req,res) => {
+
+    const productId = req.params.productId;
+
+    const sql = 'SELECT * FROM ORDERS WHERE productId= $1 GROUP BY productId';
+
+    connection.query(sql, [productId], (error,results) => {
+
+        if (error) return res.status(500).send('Error Retrieving Data from the Database');
+
+        if (results.length === 0 ) return res.status(404).send("Resource Doesn't exist.");
+
+        return res.json(results);
+    })
+} )
