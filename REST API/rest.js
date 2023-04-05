@@ -154,7 +154,21 @@ GetAllOrderByProductName
 GetAllProductsbyUsername
 
 
+const express = require('express');
+const app = express();
 
+const { Client } = require('pg')
+
+const connection = new Client ({
+    host: 'localhost',
+    user: 'admin',
+    password: 'password',
+    db: 'mydatabase',
+    port: 5432
+})
+
+
+// CreateProduct
 
 
 
