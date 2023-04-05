@@ -170,6 +170,26 @@ const connection = new Client ({
 
 // CreateProduct
 
+app.post('/products', (req,res) => {
+
+    const { productName, productDescription } = req.body;
+
+    const sql = 'INSERT INTO Products (productName, productDescription) VALUES ($1, $2)';
+
+    connection.query(sql, [productName, productDescription], (error, results) => {
+
+        if (error) return res.status(500).send('Error Creating a New Product');
+        
+        return res.json(results)
+
+        // return res.status(201).send('Product Created Successfully.')
+        // return res.status(201).json({message: 'Resource created successfully', data: results});
+        // return res.status(201).json(results);
+
+    } )
+})
+
+
 
 
 
