@@ -130,3 +130,33 @@ app.delete('/users/:id', (req,res) => {
 })
 
 
+
+Users
+Id int pk
+Username varchar
+Password varchar
+
+Products
+Id int pk
+productName varchar
+productDescription varcar
+
+Orders
+Id Int PK
+customerId FK -> UserID
+productId fk -> Product
+Price int 
+
+
+CreateProduct
+CreateOrders
+GetAllOrderByProductName
+GetAllProductsbyUsername
+
+
+
+
+
+
+
+
