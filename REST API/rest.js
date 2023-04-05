@@ -157,7 +157,7 @@ GetAllProductsbyUsername
 const express = require('express');
 const app = express();
 
-const { Client } = require('pg')
+const { Client, Connection } = require('pg')
 
 const connection = new Client ({
     host: 'localhost',
@@ -190,7 +190,20 @@ app.post('/products', (req,res) => {
 })
 
 
+// CreateOrders
 
+app.post('/orders', (req,res) => {
+    const { customerId, productId, price } = req.body;
+
+    const sql = 'INSERT INTO Orders (customerId, productId, price) VALUES ($1,$2,$3)';
+
+    connection.query(sql, [customerId, productId, price], (error, results) => {
+        if (error) return res.status(500).send('Error Creating a New Order');
+
+        res.status(201).send('Order Created Successfully!')
+    })
+
+})
 
 
 
