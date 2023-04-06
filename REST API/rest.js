@@ -239,7 +239,6 @@ app.get('/orders/:productName', (req,res) => {
     const sql = 'SELECT * FROM ORDERS INNER JOIN PRODUCTS ON ORDERS.productId = PRODUCTS.id WHERE productName = $1';
 
     
-
 })
 
  
