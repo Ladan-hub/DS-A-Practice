@@ -157,7 +157,7 @@ Price int
 const express = require('express');
 const app = express();
 
-const { Client, Connection } = require('pg')
+const { Client } = require('pg')
 
 const connection = new Client ({
     host: 'localhost',
