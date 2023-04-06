@@ -223,4 +223,23 @@ app.get('/orders/:productId', (req,res) => {
 
         return res.json(results);
     })
-} )
+});
+
+
+// GetAllProductsbyUsername
+
+
+// GetAllOrdersBy Product name
+
+
+app.get('/orders/:productName', (req,res) => {
+
+    const { productName } = req.params.productName;
+
+    const sql = 'SELECT * FROM ORDERS INNER JOIN PRODUCTS ON ORDERS.productId = PRODUCTS.id WHERE productName = $1';
+
+    
+
+})
+
+ 
