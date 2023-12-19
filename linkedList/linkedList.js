@@ -107,3 +107,19 @@ LinkedList.prototype.push = function(val){
     current.next = node;
   }
 }
+
+// create a linked list and push values in it 
+
+var sll = new LinkedList();
+
+//push node
+sll.push(2);
+sll.push(3);
+sll.push(4);
+
+//check values by traversing LinkedList 
+sll.head; //Object {data: 2, next: Object}
+sll.head.next; //Object {data: 3, next: Object}
+sll.head.next.next; //Object {data: 4, next: null}
+        
+
