@@ -80,3 +80,7 @@ myQueue.push(3);
 myQueue.shift(); //1
 myQueue.shift(); //2
 myQueue.shift(); //3
+
+
+// How will you create a linked list in JavaScript?
+
