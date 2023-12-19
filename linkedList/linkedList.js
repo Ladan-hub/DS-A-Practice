@@ -52,3 +52,6 @@ function appendToList(head, value) {
     }
     return head;
   }
+
+// How will you implement stack and queue with JavaScript?
+
