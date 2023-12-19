@@ -84,3 +84,26 @@ myQueue.shift(); //3
 
 // How will you create a linked list in JavaScript?
 
+function LinkedList(){  
+  this.head = null;
+}
+
+
+// to create add elements, will use a push method in the prototype of the object.
+
+LinkedList.prototype.push = function(val){
+  var node = {
+     value: val,
+     next: null
+  }
+  if(!this.head){
+    this.head = node;      
+  }
+  else{
+    current = this.head;
+    while(current.next){
+      current = current.next;
+    }
+    current.next = node;
+  }
+}
