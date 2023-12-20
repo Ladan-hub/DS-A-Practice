@@ -472,3 +472,6 @@ var array_Clone = function(arra1) {
 let arr = [1, 2, 3, 4];
 let firstElement = arr[0]; // 1
 let lastElement = arr[arr.length - 1]; // 4
+
+// How do you add an element to the end of an array?
+
