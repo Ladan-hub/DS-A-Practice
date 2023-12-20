@@ -467,3 +467,4 @@ var array_Clone = function(arra1) {
 // Using array literal syntax: let arr = [];
 // Using the Array() constructor: let arr = new Array();
 
+// How do you access the first and last elements of an array?
