@@ -456,3 +456,11 @@ var array_Clone = function(arra1) {
      };
  console.log(array_Clone([1, 2, 4, 0]));
  console.log(array_Clone([1, 2, [4, 0]]));
+
+
+ // Common interview questions in 2023
+
+ // How do you create an empty array in JavaScript?
+
+ 
+
