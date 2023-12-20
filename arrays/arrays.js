@@ -468,3 +468,7 @@ var array_Clone = function(arra1) {
 // Using the Array() constructor: let arr = new Array();
 
 // How do you access the first and last elements of an array?
+
+let arr = [1, 2, 3, 4];
+let firstElement = arr[0]; // 1
+let lastElement = arr[arr.length - 1]; // 4
