@@ -189,3 +189,5 @@ LinkedList.prototype.remove = function(val){
     }
   }
 } 
+
+// How would you reverse a singly LL (no loop)?
