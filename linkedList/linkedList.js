@@ -162,3 +162,6 @@ while (curr !== null) {
 }
 var middle = Math.floor(v.length / 2);
 console.log("Middle Value Of Linked List is : " + v[middle]);
+
+// Question: How could you write an extension to remove a node from a LL
+
