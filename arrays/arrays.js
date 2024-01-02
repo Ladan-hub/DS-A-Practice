@@ -490,3 +490,10 @@ console.log(arrayOfOddNumbers.length);
 
 
 // The reason for this solution is as follows: JavaScript placesempty as a value for indices 3 - 99. Thus, when you set the value of the 100th index, the array looks like:
+
+
+
+//How can you double elements of an array using reduce? Please note that you cannot create additional variables.
+
+const arrayOfNumbers = [1, 2, 3, 4];
+arrayOfNumbers.reduce((accumulator, currentValue, index, array) => array[index] = array[index] * 2);
