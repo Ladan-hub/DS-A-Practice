@@ -480,3 +480,9 @@ arr.push(4);
 console.log(arr); // [1, 2, 3, 4]
 
 
+// What is the output of the following code?
+
+const arrayOfOddNumbers = [1, 3, 5];
+arrayOfOddNumbers[100] = 199;
+console.log(arrayOfOddNumbers.length);
+
