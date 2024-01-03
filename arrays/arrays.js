@@ -530,3 +530,12 @@ console.log(
   "Address 2: " + address[1],
   "Address 3: " + address[2]
 );
+
+
+// With destructuring
+const [address1, address2, address3] = ["583, Margaret Street", "LOS ANGELES, CA", "USA"];
+console.log(
+  "Address 1: " + address1,
+  "Address 2: " + address2,
+  "Address 3: " + address3
+);
