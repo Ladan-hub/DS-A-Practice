@@ -539,3 +539,10 @@ console.log(
   "Address 2: " + address2,
   "Address 3: " + address3
 );
+
+
+// What is the value of x & y?
+
+const fn = (a, ...numbers, x, y) => {
+  console.log(x, y)
+};
