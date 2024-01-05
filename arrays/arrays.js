@@ -559,3 +559,14 @@ const fn = (a, ...numbers, x, y) => {
 // 2. What is meant by Sparse Array?
 
 // An array of data with many elements that have a zero value is termed a sparse array. Contrastingly, a dense array has most of the elements with non-zero values. Sparse array maps integers to objects, and its indices can contain gaps. These are more memory-efficient than a HashMap.
+
+
+// 3. When would you use a linked list over an array?
+
+
+// Linked lists can be used over arrays when:
+
+// You require constant-time insertions/deletions from the list, where time predictability is absolutely critical.
+// You do not know how many items the list will include. As in basic arrays, you have to re-declare and copy memory if the array size increases.
+// You do not require random access to any elements.
+// You might have to insert items in the middle of the list as in a priority queue.
