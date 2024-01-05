@@ -572,3 +572,7 @@ const fn = (a, ...numbers, x, y) => {
 // You might have to insert items in the middle of the list as in a priority queue.
 
 // What are the time complexities of sorted array operations, inserting a new element in dynamic arrays, and deleting a specific element?
+
+// sort(Object[]) works on the TimSort algorithm and gives a time complexity of O(n log(n)). The TimSort algorithm uses insertion sort and merge sort algorithms.
+// The time complexity of inserting a new element in a dynamic array is O(N).
+// The average case time complexity of deleting a specific element is O(N) in an array.
