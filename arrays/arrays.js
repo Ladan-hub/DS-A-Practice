@@ -555,3 +555,5 @@ const fn = (a, ...numbers, x, y) => {
 // Dynamic arrays (also known as a growable array, resizable array, mutable array, or ArrayLists in Java) offer a big improvement, i.e., automatic resizing.
 
 // An array has a fixed size, so you always have to specify the number of elements your array will hold ahead of time. However, a dynamic array expands as you add more elements to it and you need not determine the size ahead of time.
+
+// 2. What is meant by Sparse Array?
