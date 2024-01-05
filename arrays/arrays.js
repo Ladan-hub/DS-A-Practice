@@ -549,3 +549,6 @@ const fn = (a, ...numbers, x, y) => {
 
 
 //SyntaxError: Rest parameter must be last formal parameter
+
+// 1. What are Dynamic Arrays? How are they different from Basic Arrays?
+
