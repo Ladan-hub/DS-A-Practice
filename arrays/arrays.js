@@ -570,3 +570,5 @@ const fn = (a, ...numbers, x, y) => {
 // You do not know how many items the list will include. As in basic arrays, you have to re-declare and copy memory if the array size increases.
 // You do not require random access to any elements.
 // You might have to insert items in the middle of the list as in a priority queue.
+
+// What are the time complexities of sorted array operations, inserting a new element in dynamic arrays, and deleting a specific element?
