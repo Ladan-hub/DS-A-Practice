@@ -585,3 +585,9 @@ arr.reduce((accumulator, currentValue, index, array)=> array[index -1] =array[in
 // How to check if given input is string ?
 
 Object.prototype.toString.call(new String()) ==='[object String]'
+
+
+// How to check if given input is array ?
+
+
+Object.prototype.toString.call(new Array()) ==='[object Array]'
