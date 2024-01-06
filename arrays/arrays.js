@@ -581,3 +581,7 @@ const fn = (a, ...numbers, x, y) => {
 // How can you double elements of an array? Do not use extra variable?
 
 arr.reduce((accumulator, currentValue, index, array)=> array[index -1] =array[index -1] *2  )
+
+// How to check if given input is string ?
+
+Object.prototype.toString.call(new String()) ==='[object String]'
