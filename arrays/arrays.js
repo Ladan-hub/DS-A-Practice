@@ -576,3 +576,8 @@ const fn = (a, ...numbers, x, y) => {
 // sort(Object[]) works on the TimSort algorithm and gives a time complexity of O(n log(n)). The TimSort algorithm uses insertion sort and merge sort algorithms.
 // The time complexity of inserting a new element in a dynamic array is O(N).
 // The average case time complexity of deleting a specific element is O(N) in an array.
+
+
+// How can you double elements of an array? Do not use extra variable?
+
+arr.reduce((accumulator, currentValue, index, array)=> array[index -1] =array[index -1] *2  )
