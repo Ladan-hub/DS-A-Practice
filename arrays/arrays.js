@@ -601,3 +601,12 @@ arr[10] = 10;
 console.log(arr.length);
 
 11
+
+
+// What is the output of the following code?
+
+let array = [1, 2, 3, 4, 5];
+array.length = 0;
+console.log(array)
+
+[]
