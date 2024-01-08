@@ -591,3 +591,13 @@ Object.prototype.toString.call(new String()) ==='[object String]'
 
 
 Object.prototype.toString.call(new Array()) ==='[object Array]'
+
+
+// What will be the result when executing the given code?
+
+
+const arr = ['A', 'N', 'U'];
+arr[10] = 10;
+console.log(arr.length);
+
+11
