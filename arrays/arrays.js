@@ -615,3 +615,7 @@ console.log(array)
 // Explanation:
 
 // The code sets the length of the array to 0 using array.length = 0, effectively clearing all elements from the array. As a result, when you log the array to the console (console.log(array)), you'll get an empty array ([]).
+
+// How can you extract and print the unique values from an array?
+
+const getUniqueValues = (arr) => [...new Set(arr)];
