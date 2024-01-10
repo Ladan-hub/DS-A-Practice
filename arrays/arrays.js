@@ -624,3 +624,13 @@ const getUniqueValues = (arr) => [...new Set(arr)];
 // How can you determine if a number is an integer in JavaScript?
 
 const isInt = (num) => num % 1 === 0;
+
+
+// What is the output of the following code?
+let arr1 = [10, 12, 3.1];
+let arr2 = [10, 12, 3.1];
+console.log(arr1 == arr2);
+
+false 
+
+
