@@ -633,4 +633,15 @@ console.log(arr1 == arr2);
 
 false 
 
+// What is the output of the following code?
+let originalArray = [1, 2, 3];
+let copiedArray = originalArray.slice();
+copiedArray.push(4);
+console.log(originalArray);
+console.log(copiedArray);
+
+[1, 2, 3]
+[1, 2, 3, 4]
+
+
 
