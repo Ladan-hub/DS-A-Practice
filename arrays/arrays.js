@@ -619,3 +619,8 @@ console.log(array)
 // How can you extract and print the unique values from an array?
 
 const getUniqueValues = (arr) => [...new Set(arr)];
+
+
+// How can you determine if a number is an integer in JavaScript?
+
+const isInt = (num) => num % 1 === 0;
