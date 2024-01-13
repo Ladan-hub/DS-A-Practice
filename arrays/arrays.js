@@ -773,3 +773,21 @@ var y = "2";
 // From the very beginning, the 'var' keyword was used in JavaScript programming whereas the keyword 'let' was just added in 2015.
 // The keyword 'Var' has a function scope. Anywhere in the function, the variable specified using var is accessible but in ‘let’ the scope of a variable declared with the 'let' keyword is limited to the block in which it is declared. Let's start with a Block Scope.
 // In ECMAScript 2015, let and const are hoisted but not initialized. Referencing the variable in the block before the variable declaration results in a ReferenceError because the variable is in a "temporal dead zone" from the start of the block until the declaration is processed.
+
+// What is NaN property in JavaScript?
+
+NaN property represents the “Not-a-Number” value. It indicates a value that is not a legal number.
+
+typeof of NaN will return a Number.
+
+To check if a value is NaN, we use the isNaN() function,
+
+Note- isNaN() function converts the given value to a Number type, and then equates to NaN.
+isNaN("Hello")  // Returns true
+isNaN(345)   // Returns false
+isNaN('1')  // Returns false, since '1' is converted to Number type which results in 0 ( a number) 
+isNaN(true) // Returns false, since true converted to Number type results in 1 ( a number)
+isNaN(false) // Returns false
+isNaN(undefined) // Returns true
+
+
