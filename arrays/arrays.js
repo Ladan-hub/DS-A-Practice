@@ -791,3 +791,11 @@ isNaN(false) // Returns false
 isNaN(undefined) // Returns true
 
 
+// Explain passed by value and passed by reference.
+
+// In JavaScript, primitive data types are passed by value and non-primitive data types are passed by reference.
+
+// For understanding passed by value and passed by reference, we need to understand what happens when we create a variable and assign a value to it,
+
+// var x = 2;
+// In the above example, we created a variable x and assigned it a value of “2”. In the background, the “=” (assign operator) allocates some space in the memory, stores the value “2” and returns the location of the allocated memory space. Therefore, the variable x in the above code points to the location of the memory space instead of pointing to the value 2 directly.
