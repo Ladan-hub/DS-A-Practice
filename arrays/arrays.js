@@ -890,11 +890,22 @@ What do you think the output of the above code will be?
 
 Note - Observe the line where we are invoking the function.
 
-Check the definition again:
+// Check the definition again:
 
-The “this” keyword refers to the object that the function is a property of.
-In the above code, the function is a property of which object?
+// The “this” keyword refers to the object that the function is a property of.
+// In the above code, the function is a property of which object?
 
-Since the function is invoked in the global context, the function is a property of the global object.
+// Since the function is invoked in the global context, the function is a property of the global object.
 
-Therefore, the output of the above code will be the global object. Since we ran the above code inside the browser, the global object is the window object.
+// Therefore, the output of the above code will be the global object. Since we ran the above code inside the browser, the global object is the window object.
+
+//Example 2:
+
+var obj = {
+    name:  "vivek",
+    getName: function(){
+    console.log(this.name);
+  }
+}
+   
+obj.getName();
