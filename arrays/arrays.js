@@ -872,3 +872,29 @@ function higherOrder2() {
 var x = higherOrder2();
 x()   // Returns "Do something"
 
+// Explain “this” keyword.
+
+
+The “this” keyword refers to the object that the function is a property of.
+
+The value of the “this” keyword will always depend on the object that is invoking the function.\
+
+Confused? Let’s understand the above statements by examples:
+
+function doSomething() {
+  console.log(this);
+}
+   
+doSomething();
+What do you think the output of the above code will be?
+
+Note - Observe the line where we are invoking the function.
+
+Check the definition again:
+
+The “this” keyword refers to the object that the function is a property of.
+In the above code, the function is a property of which object?
+
+Since the function is invoked in the global context, the function is a property of the global object.
+
+Therefore, the output of the above code will be the global object. Since we ran the above code inside the browser, the global object is the window object.
