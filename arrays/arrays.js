@@ -939,4 +939,6 @@ var obj2 = {name:"akshay"};
 obj2.getAddress();    
 Can you guess the output?
 
-The output will be an error.
+//The output will be an error.
+
+// 14. What do you mean by Self Invoking Functions?
