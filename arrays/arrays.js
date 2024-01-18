@@ -984,3 +984,13 @@ function saySomething(message){
 var person4 = {name:  "John"};     
 saySomething.call(person4, "awesome");
 // Returns "John is awesome"    
+
+
+// apply()
+
+function saySomething(message) {
+  return this.name + "is" + message;
+}
+
+var person4 = {name:  "John"};
+saySomething.apply(person4, ["awesome"]);
