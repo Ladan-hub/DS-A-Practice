@@ -948,3 +948,17 @@ Can you guess the output?
 
 // Normally, we declare a function and call it, however, anonymous functions may be used to run a function automatically when it is described and will not be called again. And there is no name for these kinds of functions.
 
+
+// Explain call(), apply() and, bind() methods.
+
+// call()
+
+function sayHello(){
+  return "Hello " + this.name;
+}
+        
+var obj = {name: "Sandy"};
+        
+sayHello.call(obj);
+        
+// Returns "Hello Sandy"	
