@@ -1087,3 +1087,18 @@ function awesomeFunction(){
 console.log(a); // Throws reference error since a is written in local scope and cannot be accessed outside
 
 multiplyBy2(); // Throws reference error since multiplyBy2 is written in local scope
+
+
+// Block Scope: Block scope is related to the variables declared using let and const. Variables declared with var do not have block scope. Block scope tells us that any variable declared inside a block { }, can be accessed only inside that block and cannot be accessed outside of it.
+
+{
+  let x = 45;
+}
+
+console.log(x); // Gives reference error since x cannot be accessed outside of the block
+
+for(let i=0; i<2; i++){
+  // do something
+}
+
+console.log(i); // Gives reference error since i cannot be accessed outside of the for loop block
