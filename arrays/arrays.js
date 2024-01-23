@@ -1061,3 +1061,16 @@ curriedMultiply(4)(3); // Also returns 12
 // We can reuse the code.
 // Code readability is simple in external javascript.
 
+
+// 19. Explain Scope and Scope Chain in javascript.
+
+
+var globalVariable = "Hello world";
+
+function sendMessage(){
+  return globalVariable; // can access globalVariable since it's written in global space
+}
+function sendMessage2(){
+  return sendMessage(); // Can access sendMessage function since it's written in global space
+}
+sendMessage2();  // Returns “Hello world”
