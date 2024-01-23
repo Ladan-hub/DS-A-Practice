@@ -1074,3 +1074,16 @@ function sendMessage2(){
   return sendMessage(); // Can access sendMessage function since it's written in global space
 }
 sendMessage2();  // Returns “Hello world”
+
+// Function Scope: Any variables or functions declared inside a function have local/function scope, which means that all the variables and functions declared inside a function, can be accessed from within the function and not outside of it.
+
+function awesomeFunction(){
+  var a = 2;
+
+  var multiplyBy2 = function(){
+    console.log(a*2); // Can access variable "a" since a and multiplyBy2 both are written inside the same function
+  }
+}
+console.log(a); // Throws reference error since a is written in local scope and cannot be accessed outside
+
+multiplyBy2(); // Throws reference error since multiplyBy2 is written in local scope
