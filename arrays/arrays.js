@@ -1102,3 +1102,23 @@ for(let i=0; i<2; i++){
 }
 
 console.log(i); // Gives reference error since i cannot be accessed outside of the for loop block
+
+
+// Scope Chain: JavaScript engine also uses Scope to find variables. Let’s understand that using an example:
+
+var y = 24;
+
+function favFunction(){
+  var x = 667;
+  var anotherFavFunction = function(){
+    console.log(x); // Does not find x inside anotherFavFunction, so looks for variable inside favFunction, outputs 667
+  }
+
+  var yetAnotherFavFunction = function(){
+    console.log(y); // Does not find y inside yetAnotherFavFunction, so looks for variable inside favFunction and does not find it, so looks for variable in global scope, finds it and outputs 24
+  }
+
+  anotherFavFunction();
+  yetAnotherFavFunction();
+}
+favFunction();
