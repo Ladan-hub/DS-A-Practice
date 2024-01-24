@@ -1166,3 +1166,33 @@ var arr = [];
 arr.push(2);
 
 console.log(arr); // Outputs [2]
+
+// In the code above, as one can see, we have not defined any property or method called push on the array “arr” but the javascript engine does not throw an error.
+
+// The reason is the use of prototypes. As we discussed before, Array objects inherit properties from the Array prototype.
+
+// The javascript engine sees that the method push does not exist on the current array object and therefore, looks for the method push inside the Array prototype and it finds the method.
+
+// Whenever the property or method is not found on the current object, the javascript engine will always try to look in its prototype and if it still does not exist, it looks inside the prototype's prototype and so on.
+
+// What are callbacks?
+
+function divideByHalf(sum){
+  console.log(Math.floor(sum / 2));
+}
+
+function multiplyBy2(sum){
+  console.log(sum * 2);
+}
+
+function operationOnSum(num1,num2,operation){
+  var sum = num1 + num2;
+  operation(sum);
+}
+
+operationOnSum(3, 3, divideByHalf); // Outputs 3
+
+operationOnSum(5, 5, multiplyBy2); // Outputs 20
+
+
+
