@@ -1281,3 +1281,11 @@ console.log(person2);
 // If we want to create multiple objects having similar properties and methods, constructor functions are used.
 
 // Note- The name of a constructor function should always be written in Pascal Notation: every word should start with a capital letter.
+
+
+// What is DOM?
+
+// DOM stands for Document Object Model.  DOM is a programming interface for HTML and XML documents.
+// When the browser tries to render an HTML document, it creates an object based on the HTML document called DOM. Using this DOM, we can manipulate or change various elements inside the HTML document.
+// Example of how HTML code gets converted to DOM:
+
