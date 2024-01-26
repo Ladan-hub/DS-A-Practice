@@ -1257,3 +1257,27 @@ function computeSum(arr){
 }
 computeSum([7, 8, 9, 99]); // Returns 123
 
+
+// What is the use of a constructor function in javascript?
+
+function Person(name,age,gender){
+  this.name = name;
+  this.age = age;
+  this.gender = gender;
+}
+
+
+var person1 = new Person("Vivek", 76, "male");
+console.log(person1);
+
+var person2 = new Person("Courtney", 34, "female");
+console.log(person2);
+
+
+// Constructor functions are used to create objects in javascript.
+
+// When do we use constructor functions?
+
+// If we want to create multiple objects having similar properties and methods, constructor functions are used.
+
+// Note- The name of a constructor function should always be written in Pascal Notation: every word should start with a capital letter.
