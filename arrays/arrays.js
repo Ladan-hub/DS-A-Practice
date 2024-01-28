@@ -1291,6 +1291,9 @@ console.log(person2);
 // Which method is used to retrieve a character from a certain index?
 // The charAt() function of the JavaScript string finds a char element at the supplied index. The index number begins at 0 and continues up to n-1, Here n is the string length. The index value must be positive, higher than, or the same as the string length.
 
+// What do you mean by BOM?
+// Browser Object Model is known as BOM. It allows users to interact with the browser. A browser's initial object is a window. As a result, you may call all of the window's functions directly or by referencing the window. The document, history, screen, navigator, location, and other attributes are available in the window object.
+
 
 
 
