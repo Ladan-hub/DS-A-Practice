@@ -1294,6 +1294,16 @@ console.log(person2);
 // What do you mean by BOM?
 // Browser Object Model is known as BOM. It allows users to interact with the browser. A browser's initial object is a window. As a result, you may call all of the window's functions directly or by referencing the window. The document, history, screen, navigator, location, and other attributes are available in the window object.
 
+// What is the distinction between client-side and server-side JavaScript?
+
+// Client-side JavaScript is made up of two parts, a fundamental language and predefined objects for performing JavaScript in a browser. JavaScript for the client is automatically included in the HTML pages. At runtime, the browser understands this script.
+
+
+// Server-side JavaScript, involves the execution of JavaScript code on a server in response to client requests. It handles these requests and delivers the relevant response to the client, which may include client-side JavaScript for subsequent execution within the browser.
+
+// JavaScript Interview Questions for Experienced
+
+
 
 
 
