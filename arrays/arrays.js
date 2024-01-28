@@ -1287,5 +1287,10 @@ console.log(person2);
 
 // DOM stands for Document Object Model.  DOM is a programming interface for HTML and XML documents.
 // When the browser tries to render an HTML document, it creates an object based on the HTML document called DOM. Using this DOM, we can manipulate or change various elements inside the HTML document.
-// Example of how HTML code gets converted to DOM:
+
+// Which method is used to retrieve a character from a certain index?
+// The charAt() function of the JavaScript string finds a char element at the supplied index. The index number begins at 0 and continues up to n-1, Here n is the string length. The index value must be positive, higher than, or the same as the string length.
+
+
+
 
