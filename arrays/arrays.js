@@ -1304,6 +1304,22 @@ console.log(person2);
 // JavaScript Interview Questions for Experienced
 
 
+// What are arrow functions?
+
+// Traditional Function Expression
+var add = function(a,b){
+  return a + b;
+}
+
+// Arrow Function Expression
+var arrowAdd = (a,b) => a + b;
+
+var obj1 = {
+  valueOfThis: function(){
+    return this;
+  }
+}
+
 
 
 
