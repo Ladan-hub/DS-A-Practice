@@ -1350,3 +1350,13 @@ window.variable2; // Returns undefined
 // Variables declared in the global scope with var and let keywords can be accessed from anywhere in the code.
 // But, there is one difference! Variables that are declared with the var keyword in the global scope are added to the window/global object. Therefore, they can be accessed using window.variableName.
 // Whereas, the variables declared with the let keyword are not added to the global object, therefore, trying to access such variables using window.variableName results in an error.
+
+var vs let in functional scope
+
+function varVsLetFunction(){
+  let awesomeCar1 = "Audi";
+  var awesomeCar2 = "Mercedes";
+}
+
+console.log(awesomeCar1); // Throws an error
+console.log(awesomeCar2); // Throws an error
