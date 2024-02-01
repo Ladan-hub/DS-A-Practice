@@ -1427,3 +1427,15 @@ function addAllArgs(...args){
 
 addAllArgs(6, 5, 7, 99); // Returns 117
 addAllArgs(1, 3, 4); // Returns 8
+
+//**Note- Rest parameter should always be used at the last parameter of a function:
+
+// Incorrect way to use rest parameter
+function randomFunc(a,...args,c){
+//Do something
+}
+
+// Correct way to use rest parameter
+function randomFunc2(a,b,...args){
+//Do something
+}
