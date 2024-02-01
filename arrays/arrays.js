@@ -1384,3 +1384,21 @@ for(var j = 0; j < 2; i++){
 }
 
 console.log(j) // Outputs 2 
+
+
+// Const keyword
+
+// Variables with the const keyword behave exactly like a variable declared with the let keyword with only one difference, any variable declared with the const keyword cannot be reassigned.
+// Example:
+const x = {name:"Vivek"};
+
+x = {address: "India"}; // Throws an error
+
+x.name = "Nikhil"; // No error is thrown
+
+const y = 23;
+
+y = 44; // Throws an error
+// In the code above, although we can change the value of a property inside the variable declared with const keyword, we cannot completely reassign the variable itself.
+
+
