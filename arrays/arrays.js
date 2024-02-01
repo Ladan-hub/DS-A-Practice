@@ -1467,3 +1467,8 @@ let obj2 = {z:'Yes', a:'No'};
 let mergedObj = {...obj1, ...obj2}; // Spreads both the objects and merges it
 console.log(mergedObj);
 // Outputs {x:'Hello', y:'Bye',z:'Yes',a:'No'};
+
+//***Note- Key differences between rest parameter and spread operator:
+
+// Rest parameter is used to take a variable number of arguments and turns them into an array while the spread operator takes an array or an object and spreads it
+// Rest parameter is used in function declaration whereas the spread operator is used in function calls.
