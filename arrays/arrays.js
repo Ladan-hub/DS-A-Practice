@@ -1514,3 +1514,6 @@ function sumOfThreeElements(...elements){
 }
 
 
+// What are classes in javascript?
+
+// Introduced in the ES6 version, classes are nothing but syntactic sugars for constructor functions. They provide a new way of declaring constructor functions in javascript.  Below are the examples of how classes are declared and used:
