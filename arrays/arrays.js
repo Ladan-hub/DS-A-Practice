@@ -1605,6 +1605,8 @@ console.log(iterator.next()); // {value:1,done:false}
 console.log(iterator.next()); // {value:2,done:true}
 // As you can see in the code above, the last line returns done:true, since the code reaches the return statement.
 
+
+
 // Explain WeakSet in javascript
 
 
@@ -1622,4 +1624,10 @@ const newSet2 = new WeakSet([3, 4, 5]); //Throws an error
 let obj1 = {message:"Hello world"};
 const newSet3 = new WeakSet([obj1]);
 console.log(newSet3.has(obj1)); // true
+
+// Why do we use callbacks?
+// A callback function is a method that is sent as an input to another function (now let us name this other function "thisFunction"), and it is performed inside the thisFunction after the function has completed execution.
+
+// JavaScript is a scripting language that is based on events. Instead of waiting for a reply before continuing, JavaScript will continue to run while monitoring for additional events. Callbacks are a technique of ensuring that a particular code does not run until another code has completed its execution.
+
 
