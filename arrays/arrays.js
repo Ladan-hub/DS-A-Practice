@@ -1630,4 +1630,19 @@ console.log(newSet3.has(obj1)); // true
 
 // JavaScript is a scripting language that is based on events. Instead of waiting for a reply before continuing, JavaScript will continue to run while monitoring for additional events. Callbacks are a technique of ensuring that a particular code does not run until another code has completed its execution.
 
+// Explain WeakMap in javascript
+
+// In javascript, Map is used to store key-value pairs. The key-value pairs can be of both primitive and non-primitive types. WeakMap is similar to Map with key differences:
+
+// The keys and values in weakmap should always be an object.
+// If there are no references to the object, the object will be garbage collected.
+const map1 = new Map();
+map1.set('Value', 1);
+
+const map2 = new WeakMap();
+map2.set('Value', 2.3); // Throws an error
+
+let obj = {name:"Vivek"};
+const map3 = new WeakMap();
+map3.set(obj, {age:23});
 
