@@ -1557,3 +1557,69 @@ student2.getDetails();
 // Returns Name: Garry, Roll no:673, Grade: 7th, Section:C
 
 
+// What are generator functions?
+
+// Introduced in the ES6 version, generator functions are a special class of functions.
+
+// They can be stopped midway and then continue from where they had stopped.
+
+// Generator functions are declared with the function* keyword instead of the normal function keyword:
+
+function* genFunc(){
+  // Perform operation
+}
+In normal functions, we use the return keyword to return a value and as soon as the return statement gets executed, the function execution stops:
+
+function normalFunc(){
+  return 22;
+  console.log(2); // This line of code does not get executed
+}
+In the case of generator functions, when called, they do not execute the code, instead, they return a generator object. This generator object handles the execution.
+
+function* genFunc(){
+  yield 3;
+  yield 4;
+}
+genFunc(); // Returns Object [Generator] {}
+The generator object consists of a method called next(), this method when called, executes the code until the nearest yield statement, and returns the yield value.
+
+//For example, if we run the next() method on the above code:
+
+genFunc().next(); // Returns {value: 3, done:false}
+//As one can see the next method returns an object consisting of a value and done properties.  Value property represents the yielded value. Done property tells us whether the function code is finished or not. (Returns true if finished).
+
+//Generator functions are used to return iterators. Let’s see an example where an iterator is returned:
+
+function* iteratorFunc() {
+  let count = 0;
+  for (let i = 0; i < 2; i++) {
+      count++;
+      yield i;
+  }
+  return count;
+}
+
+let iterator = iteratorFunc();
+console.log(iterator.next()); // {value:0,done:false}
+console.log(iterator.next()); // {value:1,done:false}
+console.log(iterator.next()); // {value:2,done:true}
+// As you can see in the code above, the last line returns done:true, since the code reaches the return statement.
+
+// Explain WeakSet in javascript
+
+
+// In javascript, a Set is a collection of unique and ordered elements. Just like Set, WeakSet is also a collection of unique and ordered elements with some key differences:
+
+// Weakset contains only objects and no other type.
+// An object inside the weakset is referenced weakly. This means, that if the object inside the weakset does not have a reference, it will be garbage collected.
+// Unlike Set, WeakSet only has three methods, add() , delete() and has() .
+const newSet = new Set([4, 5, 6, 7]);
+console.log(newSet);// Outputs Set {4,5,6,7}
+
+const newSet2 = new WeakSet([3, 4, 5]); //Throws an error
+
+
+let obj1 = {message:"Hello world"};
+const newSet3 = new WeakSet([obj1]);
+console.log(newSet3.has(obj1)); // true
+
