@@ -1646,3 +1646,34 @@ let obj = {name:"Vivek"};
 const map3 = new WeakMap();
 map3.set(obj, {age:23});
 
+
+// What is Object Destructuring?
+
+
+//Object destructuring is a new way to extract elements from an object or an array.
+
+// Object destructuring: Before ES6 version:
+const classDetails = {
+  strength: 78,
+  benches: 39,
+  blackBoard:1
+}
+
+const classStrength = classDetails.strength;
+const classBenches = classDetails.benches;
+const classBlackBoard = classDetails.blackBoard;
+The same example using object destructuring:
+
+const classDetails = {
+  strength: 78,
+  benches: 39,
+  blackBoard:1
+}
+
+const {strength:classStrength, benches:classBenches,blackBoard:classBlackBoard} = classDetails;
+
+console.log(classStrength); // Outputs 78
+console.log(classBenches); // Outputs 39
+console.log(classBlackBoard); // Outputs 1
+
+
