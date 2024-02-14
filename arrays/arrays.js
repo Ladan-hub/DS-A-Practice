@@ -1736,4 +1736,15 @@ anotherRandomFunc();
 // What has to be done in order to put Lexical Scoping into practice?
 // To support lexical scoping, a JavaScript function object's internal state must include not just the function's code but also a reference to the current scope chain.
 
+// What is the purpose of the following JavaScript code?
 
+var scope = "global scope";
+function check() 
+{
+    var scope = "local scope"; 
+    function f() 
+    { 
+         return scope; 
+    }
+    return f;
+}
