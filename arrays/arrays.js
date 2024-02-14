@@ -1728,3 +1728,7 @@ anotherRandomFunc();
 // Number
 // String
 
+
+// What is the role of deferred scripts in JavaScript?
+
+
