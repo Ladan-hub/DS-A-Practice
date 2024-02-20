@@ -2029,3 +2029,8 @@ function randomFunc(){
   }
 }
 randomFunc();
+
+
+// Write a function that performs binary search on a sorted array.
+
+
