@@ -1993,3 +1993,39 @@ function randomFunc(){
   }
 }
 randomFunc();
+
+//Code 1 - Outputs 45.
+
+// Even though a is defined in the outer function, due to closure the inner functions have access to it.
+
+// Code 2 - This code can be modified by using closures,
+
+function bigFunc(){
+  let newArray = new Array(700).fill('♥');
+  return (element) => newArray[element];
+}
+
+let getElement = bigFunc(); // Array is created only once
+getElement(599);
+getElement(670);  
+
+//Code 3 - Can be modified in two ways:
+
+//Using let keyword:
+
+function randomFunc(){
+  for(let i = 0; i < 2; i++){
+    setTimeout(()=> console.log(i),1000);
+  }
+}
+randomFunc(); 
+// Using closure:
+
+function randomFunc(){
+  for(var i = 0; i < 2; i++){
+  (function(i){
+      setTimeout(()=>console.log(i),1000);
+    })(i);
+  }
+}
+randomFunc();
