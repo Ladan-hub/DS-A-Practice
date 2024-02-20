@@ -2046,3 +2046,33 @@ function binarySearch(arr,value,startPos,endPos){
     return binarySearch(arr,value,middleIndex+1,endPos);
   }
 }   
+
+
+//  Implement a function that returns an updated array with r right rotations on an array of integers a
+
+function rotateRight(arr,rotations){
+  if(rotations == 0) return arr;
+  for(let i = 0; i < rotations;i++){
+    let element = arr.pop();
+    arr.unshift(element);
+  }
+  return arr;
+}
+rotateRight([2, 3, 4, 5, 7], 3); // Return [4,5,7,2,3]
+rotateRight([44, 1, 22, 111], 5); // Returns [111,44,1,22]   
+
+
+// Write the code for dynamically inserting new components.
+
+<html> 
+<head> 
+<title>inserting new components dynamically</title> 
+<script type="text/javascript"> 
+    function addNode () { var newP = document. createElement("p"); 
+    var textNode = document.createTextNode(" This is other node"); 
+    newP.appendChild(textNode); document.getElementById("parent1").appendChild(newP); } 
+</script> 
+</head> 
+<body> <p id="parent1">firstP<p> </body> 
+</html>
+
