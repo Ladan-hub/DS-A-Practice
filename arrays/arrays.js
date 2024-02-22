@@ -2158,3 +2158,10 @@ undefined
 undefined
 undefined
 undefined */}
+
+
+{/* JavaScript Fundamentals
+Writing JavaScript code in an HTML page: We must enclose the JavaScript code within the <script> tag in order to include it on an HTML page just as the example shown below:
+<script type = "text/javascript">
+//JavaScript coding can be done inside this tag
+</script> */}
