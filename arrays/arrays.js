@@ -2174,3 +2174,14 @@ Usage of Comments in JavaScript coding: Comments are extremely useful in program
 Single-line comments: If you want to include a single line comment, start it with "//".
 Multi-line comments: If you want to write a comment that spans multiple lines, you can wrap it in /* and */ to prevent it from being executed. */}
 
+// 2. Javascript Variables
+
+Variables in JavaScript are simply names of storage locations. In other words, they can be considered as stand-in values that we can use to perform various operations in our JavaScript codes. JavaScript allows the usage of variables in the following three ways:
+
+var: The most commonly used variable in JavaScript is var. It can be redeclared and its value can be reassigned, but only inside the context of a function. When the JavaScript code is run, variables defined using var are moved to the top. An example of a variable declared using the "var" keyword in JavaScript is shown below:
+var x = 140; //  variable x can be reassigned a new value and also redeclared
+const: const variables in JavaScript cannot be used before they appear in the code. They can neither be reassigned values, that is, their value remains fixed throughout the execution of the code, nor can they be redeclared. An example of a variable declared using the "const" keyword in JavaScript is shown below:
+const x = 5; // variable x cannot be reassigned a new value or redeclared
+let: The let variable, like const, cannot be redeclared. But they can be reassigned a value. An example of a variable declared using the "let" keyword in JavaScript is shown below:
+let x = 202; // variable x cannot be redeclared but can be reassigned a new value
+
