@@ -2185,3 +2185,15 @@ const x = 5; // variable x cannot be reassigned a new value or redeclared
 let: The let variable, like const, cannot be redeclared. But they can be reassigned a value. An example of a variable declared using the "let" keyword in JavaScript is shown below:
 let x = 202; // variable x cannot be redeclared but can be reassigned a new value
 
+// Javascript Data Types
+
+Different types of values and data can be stored in JavaScript variables. To assign values to JavaScript variables, you use the equals to "=" sign operator. The various data types in JavaScript are as follows:
+
+Numbers: These are just numerical values. They can be real numbers or integers. An example of the numbers data type is shown below: var id = 100
+Variables: The variable data type, as the name suggests, does not have a fixed value. An example of the variables data type is shown below: var y
+Text (strings): String data types of JavaScript are a combination of multiple characters. An example of the string data type is shown below: var demoString = "Hello World"
+Operations: Operations in JavaScript can also be assigned to JavaScript variables. An example of these is shown below: var sum = 20 + 30 + 29
+Boolean values: Boolean values can be true or false. An example of the boolean data type is shown below: var booleanValue = true
+Constant numbers: As the name suggests, these data types have a fixed value. An example of the constant data type is shown below: const g = 9.8
+Objects: JavaScript objects are containers for named values called properties. They possess their own data members and methods. An example of the objects data type is shown below:
+var name = {name:"Jon Snow", id:"AS123"}
