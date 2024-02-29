@@ -2290,3 +2290,31 @@ lastIndexOf(): This method is used for returning the final index at which a give
 join(): This method is used for combining elements of an array into one single string and then returning it.
 sort(): This method is used for sorting the array elements based on some condition.
 
+
+JavaScript Functions
+
+
+JavaScript Functions can be defined as chunks of code written in JavaScript to perform a single task. A function in JavaScript looks like this:
+
+function nameOfTheFunction(parameterOne, parameterTwo, parameterThree, parameterFour,....,parameterN) {
+   // Job or Task of the function 
+}
+The code above consists of the "function" keyword and a name, as you can see. The parameters of the function are enclosed in brackets, while the function's task code and output is enclosed in curly brackets. You can make your own, but there are a few default functions to make your life easier. Although we will be discussing various methods throughout this cheat sheet, let us discuss in brief two important types of JavaScript functions in this section:
+
+Functions For Throwing Data As Output: The output of data is a common application for functions. You have the following options for outputting data:
+prompt(): This function is used for creating a dialogue box for taking input from the user.
+alert(): This function is used for outputting information in an alert box in the browser window
+console.log(): This function is used for writing data to the browser's console and is used for the purpose of debugging code by developers.
+document.write(): This function is used for writing straight to our HTML document
+confirm(): This function is used for opening up a yes or no dialogue box and for returning a boolean value depending upon the user's click
+Global Functions: Every browser that can run JavaScript has a set of global functions built-in. Some of them are as follows:
+parseFloat(): This function is used for parsing the argument passed to it and returning a floating-point number.
+parseInt(): This function is used for parsing the argument passed to it and returning an integral number.
+encodeURI(): This function is used for encoding a URI into a UTF-8 encoding scheme.
+decodeURI(): This function is used for decoding a Uniform Resource Identifier (URI) made by encodeURI() function or similar functions.
+encodeURIComponent(): This function is used for the same purpose as encodeURI() only for URI components.
+decodeURIComponent(): This function is used for decoding a URI component.
+isNaN(): This function is used for determining if a given value is Not a Number or not.
+Number(): This function is used for returning a number converted from what is passed as an argument to it.
+eval(): This function is used for evaluating JavaScript programs presented as strings.
+isFinite(): This function is used for determining if a passed value is finite or not.
