@@ -2318,3 +2318,33 @@ isNaN(): This function is used for determining if a given value is Not a Number 
 Number(): This function is used for returning a number converted from what is passed as an argument to it.
 eval(): This function is used for evaluating JavaScript programs presented as strings.
 isFinite(): This function is used for determining if a passed value is finite or not.
+
+
+8. Scope and Scope Chain in JavaScript
+
+1. Scope: The accessibility or visibility of variables in JavaScript is referred to as scope. That is, which sections of the program can access a given variable and where the variable can be seen. There are usually three types of scopes:
+
+Global Scope: The global scope includes any variable that is not contained within a function or block (a pair of curly braces). Global scope variables can be accessed from anywhere in the program. An example showing the global scope of a variable is given below:
+var hello = 'Hello!';
+function sayHello() {
+ console.log(hello);
+}
+// 'Hello!' gets logged
+sayHello();
+Local or Function Scope: Variables declared inside a function are local variables. They can only be accessed from within that function; they are not accessible from outside code. An example showing local scope of a variable is given below:
+function sayHello() {
+ var hello = 'Hello!';
+ console.log(hello);
+}
+// 'Hello!' gets logged
+sayHello();
+console.log(hello); // Uncaught ReferenceError: hello is not defined
+
+Block Scope: Unlike var variables, let and const variables can be scoped to the nearest pair of curly brackets in ES6. They can't be reached from outside that pair of curly braces, which means they can't be accessed from the outside. An example showing the block scope of a variable is given below:
+{
+ let hello = 'Hello!';
+ var language = 'Hindi';
+ console.log(hello); // 'Hello!' gets logged
+}
+console.log(language); // 'Hindi!' gets logged
+console.log(hello); // Uncaught ReferenceError: hello is not defined
