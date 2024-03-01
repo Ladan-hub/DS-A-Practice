@@ -2385,3 +2385,18 @@ var x // Declaration of variable x
 x = 7; // Initialization of variable x to a value 7
 console.log(x); // 7 is logged post the line with initialization's execution.
 
+
+10. JavaScript Closures
+A closure is a function that has been bundled together (enclosed) with references to its surroundings (the lexical environment). In other words, a closure allows an inner function to access the scope of an outside function. Closures are formed every time a function is created in JavaScript, during function creation time. An example of closures in Javascript is given below:
+
+function subtractor(subtractingInteger) {
+ return function(a) {
+   return a - subtractingInteger;
+ };
+}
+var subtract2 = subtractor(2);
+var subtract5 = subtractor(5);
+console.log(subtract2(5));  // 3 is logged
+console.log(subtract5(5)); // 0 is logged
+In this example, we have developed a function subtractor(subtractingInteger) that takes a single parameter subtractingInteger and returns a new function. Its return function accepts only one input, a, and returns the difference of a and subtractingInteger. The function 'subtractor' is essentially a function factory. It creates functions that have the ability to subtract a specified value from their arguments. The function factory creates two new functions in the example above: one that subtracts 2 from its argument and one that subtracts 5 from its arguments. Both subtract2 and subtract5 are closures. They have the same function body definition, but they hold lexical surroundings that are distinct. subtractingInteger is 2 in subtract2's lexical environment, but subtractingInteger is 5 in subtract5's lexical environment.
+
