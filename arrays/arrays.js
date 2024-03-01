@@ -2371,3 +2371,17 @@ If the script isn't in strict mode, the engine will either create a new variable
 
 As a result, the engine will traverse the scope chain till the time when a variable is found.
 
+9. JavaScript Hoisting
+Prior to executing the code, the interpreter appears to relocate the declarations of functions, variables, and classes to the top of their scope using a process known as Hoisting in JavaScript. Functions can be securely utilised in code before they have been declared thanks to hoisting. Variable and class declarations are likewise hoisted, allowing them to be referenced prior to declaration. It should be noted that doing so can result in unforeseen mistakes and is not recommended. There are usually two types of Hoisting:
+
+Function Hoisting: Hoisting has the advantage of allowing you to use a function before declaring it in your code as shown in the code snippet given below. Without function hoisting, we would have to first write down the function display and only then can we call it.
+display("Lion");
+function display(inputString) {
+ console.log(inputString); // 'Lion' gets logged 
+}
+Variable Hoisting: You can use a variable in code before it is defined and/or initialised because hoisting works with variables as well. JavaScript, however, only hoists declarations, not initializations! Even if the variable was initially initialised then defined, or declared and initialised on the same line, initialization does not occur until the associated line of code is run. The variable has its default initialization till that point in the execution is reached (undefined for a variable declared using var, otherwise uninitialized). An example of variable hoisting is shown below:
+console.log(x) // 'undefined' is logged from hoisted var declaration (instead of 7)
+var x // Declaration of variable x
+x = 7; // Initialization of variable x to a value 7
+console.log(x); // 7 is logged post the line with initialization's execution.
+
