@@ -2348,3 +2348,26 @@ Block Scope: Unlike var variables, let and const variables can be scoped to the 
 }
 console.log(language); // 'Hindi!' gets logged
 console.log(hello); // Uncaught ReferenceError: hello is not defined
+
+
+2. Scope Chain: When a variable is used in JavaScript, the JavaScript engine searches the current scope for the variable's value. If it can't find the variable in the inner scope, it will look into the outer scope until it finds it or reaches the global scope.
+
+If it still can't identify the variable, it will either return an error or implicitly declare the variable in the global scope (if not in strict mode). Let us take into consideration the following example:
+
+let a = 'a';
+function foo() {
+ let b = 'b';
+ console.log(b); // 'b' gets logged
+ console.log(a); // 'a' gets logged
+ randomNumber = 33;
+ console.log(randomNumber);  // 33 gets logged
+}
+foo();
+When the function foo() is called, the JavaScript engine searches for the 'b' variable in the current scope and finds it. Then it looks for the 'a' variable in the current scope, which it can't find, so it moves on to the outer scope, where it finds it (i.e global scope).
+
+After that, we assign 33 to the 'randomNumber' variable, causing the JavaScript engine to search for it first in the current scope, then in the outer scope.
+
+If the script isn't in strict mode, the engine will either create a new variable called randomNumber and assign 33 to it, or it will return an error (if not in strict mode).
+
+As a result, the engine will traverse the scope chain till the time when a variable is found.
+
