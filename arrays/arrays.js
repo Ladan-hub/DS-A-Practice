@@ -2400,3 +2400,34 @@ console.log(subtract2(5));  // 3 is logged
 console.log(subtract5(5)); // 0 is logged
 In this example, we have developed a function subtractor(subtractingInteger) that takes a single parameter subtractingInteger and returns a new function. Its return function accepts only one input, a, and returns the difference of a and subtractingInteger. The function 'subtractor' is essentially a function factory. It creates functions that have the ability to subtract a specified value from their arguments. The function factory creates two new functions in the example above: one that subtracts 2 from its argument and one that subtracts 5 from its arguments. Both subtract2 and subtract5 are closures. They have the same function body definition, but they hold lexical surroundings that are distinct. subtractingInteger is 2 in subtract2's lexical environment, but subtractingInteger is 5 in subtract5's lexical environment.
 
+11. JavaScript Strings
+As mentioned earlier, Strings are nothing but a combination of characters that can be used to perform a variety of tasks. JavaScript provides so many methods for Strings alone that it makes sense to cover Strings as a standalone topic in this cheat sheet. Let us now look at the various escape sequences in JavaScript and the methods which JavaScript provides for strings:
+
+Escape Sequences or Escape Characters: An escape character is a character in computers and telecommunications that causes the following characters in a character sequence to take on a different meaning. Metacharacters include escape characters, which are a subset of metacharacters. In general, whether something is an escape character or not is determined by the context. For instance, Strings in JavaScript are delimited by single or double-quotes. You must use special characters in a string if you want to utilise quote marks. A few of the escape characters allowed by JavaScript are as follows:
+\' — Single quotes
+\" — Double quotes
+\t — Horizontal tab
+\v — Vertical tab
+\\ — Backslash
+\b — Backspace
+\f — Form feed
+\n — Newline
+\r — Carriage return
+String methods: As mentioned earlier, JavaScript provides a lot of methods to manipulate its Strings. Let us take a look at some of them:
+toLowerCase() — This method is used for converting strings to lower case
+toUpperCase() — This method is used for converting strings to upper case
+charAt() — This method is used for returning the character at a particular index of a string
+charCodeAt() — This method is used for returning to us the Unicode of the character at a  given index
+fromCharCode() — This method is used for returning a string made from a particular sequence of UTF-16 code units
+concat() — This method is used for concatenating or joining multiple strings into a single string
+match() — This method is used for retrieving the matches of a string against a pattern string which is provided
+replace() — This method is used for finding and replacing a given text in the string
+indexOf() — This method is used for providing the index of the first appearance of a given text inside the string
+lastIndexOf() — This method is similar to the indexOf() methods and only differs in the fact that it searches for the last occurrence of the character and searches backwards
+search() — This method is used for executing a search for a matching text and returning the index of the searched string
+substr() —  This method is pretty much the same as the slice() method but the extraction of a substring in it depends on a given number of characters
+slice() — This method is used for extracting an area of the string and returning it
+split() — This method is used for splitting a string object into an array of strings at a particular index
+substring() — Even this method is almost the same as the slice() method but it does not allow negative positions
+valueOf() — This method is used for returning the primitive value (one without any properties or methods) of a string object
+
