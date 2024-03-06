@@ -2480,3 +2480,26 @@ removeAttribute() — Removes an element's supplied attribute.
 removeAttributeNS() — Removes an attribute from an element in a specific namespace.
 setAttributeNode() — Sets or modifies an attribute node.
 setAttributeNodeNS() — Sets a new namespaced attribute node to an element with setAttributeNodeNS().
+
+
+13. JavaScript Data Transformation
+
+Data Transformation in JavaScript can be done with the usage of higher-order functions. Higher-order functions are those functions in JavaScript which can accept one or more functions as inputs and return a function as the result. All higher-order functions that take a function as input are map(), filter(), and reduce(). Let us now take a look at how these functions can be used. One thing to note over here is that because all of these functions are part of the JavaScript Array prototype, they can be used directly on an array.
+
+map() method: The map method applies a function to each array element. The callback function receives each element of the array and returns a new array of the same length. This method can be used to conduct the same operation/transformation on each element of an array and return a new array with the modified values of the same length. An example of the usage of the map() method is given below:
+
+var arr = [10,20,30];
+var triple  = arr.map(x => x * 3);
+triple; // [30,60,90]
+filter() method:  Using the filter() method, items that do not meet a criterion are removed from the array. The callback function receives every element of the array. If the callback returns true on each iteration, the element will be added to the new array; otherwise, it will not be added. An example of the usage of the filter() method is given below:
+
+var arr = [13,40,47];
+var odd = arr.filter(x => x % 2);
+odd; // [13,47]
+reduce() method: The reduce() method can combine the items of an array into a single value. When using reduce, we must declare the accumulator's beginning value (final result). Each iteration, we do some operation inside the callback, which is then added to the accumulator. An example of the usage of the reduce() method is given below:
+
+var arr = [10,20,30];
+var counter = 0;
+let answer = arr.reduce((accumulator, value) => value + accumulator, counter);
+console.log(answer) // answer = 10 + 20 + 30 = 60
+
