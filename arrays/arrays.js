@@ -2503,3 +2503,52 @@ var counter = 0;
 let answer = arr.reduce((accumulator, value) => value + accumulator, counter);
 console.log(answer) // answer = 10 + 20 + 30 = 60
 
+
+14. JavaScript Regular Expressions
+
+Regular expressions can be defined as search patterns that can be used to match string character combinations. Text search and text to replace procedures can both benefit from the search pattern. Let us look at how JavaScript allows Regular Expressions:
+
+Pattern Modifiers: Following are the pattern modifiers that are allowed in JavaScript:
+e —  This is used for evaluating replacement
+i — This is used for performing case-insensitive matching
+U — This is used for ungreedy pattern
+g — This is used for performing global matching
+m — This is used for performing multiple line matching
+s — This is used for treating strings as a single line
+x — This is used for allowing comments and whitespace in the pattern
+Metacharacters: Following are the metacharacters that are allowed in JavaScript:
+. — This is used for finding a single character, except newline or line terminator
+\w — This is used for finding Word characters
+\W — This is used for finding Non-word characters
+\s — This is used for finding Whitespace characters
+\S — This is used for finding Non-whitespace characters
+\b — This is used for finding matches at the beginning or at the end of a word
+\B — This is used for finding matches not at the beginning or at the end of a word
+\0 — This is used for finding NULL characters
+\n — This is used for finding a new line character
+\f — This is used for finding a Form feed character
+\r — This is used for finding a Carriage return character
+\t — This is used for finding a Tab character
+\v — This is used for finding a Vertical tab character
+\d — This is used for finding digits
+\D — This is used for finding non-digit characters
+\xxx — This is used for finding characters given by an octal number xxx
+\xdd — This is used for finding characters given by a hexadecimal number dd
+\uxxxx — This is used for finding the Unicode character given by a hexadecimal number XXXX
+Brackets: You can group parts of a regular expression together by putting them inside round brackets or parentheses. You can use this to apply a quantifier to the entire group or to limit the alternation to a specific area of the regex. For grouping, only parenthesis can be used. A character class is defined by square brackets, while a quantifier with precise bounds is defined by curly braces. Let us look at some of the brackets which JavaScript allows:
+[abc] — This is used for finding all the characters between the brackets
+(a|b|c) — This is used for finding all of the alternatives separated with |
+[^abc] — This is used for finding every character that is not in the brackets
+[0-9] — This is used for finding each digit from 0 to 9
+[A-z] — This is used for finding each character from uppercase A to lowercase z
+Quantifiers: Quantifiers provide the minimum number of instances of a character, group, or character class in the input required to find a match. The quantifiers supported by JavaScript are listed in the table below.
+n+ — This is used for matching each string which is having one or more n
+n* — This is used for matching any string which is having zero or more occurrences of n
+n? — This is used for matching strings which are having zero or one occurrence of n
+^n — This is used for matching strings with n in the first place
+?=n — This is used for matching all strings which are followed by a particular string n
+?!n — This is used for matching strings that are not followed by a particular string ni
+n{X} — This is used for matching strings that contain a sequence of X n’s
+n{X,Y} — This is used for matching a string that contains a sequence of X to Y n’s
+n{X,} — This is used for matching all strings which are having a sequence of X or more n’s
+n$ — This is used for matching all strings having n at the end.
