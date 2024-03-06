@@ -2599,3 +2599,35 @@ ceil(x) — x's value rounded to the next integer
 cos(x) – The cosine of x is cos(x) (x is in radians)
 max(x,y,z,...,n) — Returns the highest-valued number.
 min(x,y,z,...,n) — The number with the lowest value is the same as the number with the highest value.
+
+
+16. JavaScript Date Objects
+
+Dates are extremely important to deal with while creating most types of applications. JavaScript also allows you to deal with and change dates and times. The next section of the JavaScript cheat sheet is how to work on dates:
+
+Setting Dates: Dates can be set using the following three ways:
+Date() — Returns a new date object that contains the current date and time.
+Date(1993, 6, 19, 5, 12, 50, 32) — We can create a custom date object with the pattern as Year, month, day, hour, minutes, seconds, and milliseconds are represented by the numbers. Except for the year and month, we can omit anything we like.
+Date("1999-12-22") — Date as a string declaration
+Getting the values of Time and Date: The following methods can be used for getting the date and time values in JavaScript:
+getDate() returns the month's day as a number (1-31)
+getTime() — Get the milliseconds since January 1, 1970
+getUTCDate() returns the month's day (day) in the supplied date in universal time (also available for day, month, full year, hours, minutes etc.)
+getMilliseconds() — This function returns the milliseconds (0-999)
+getMinutes() — Returns the current minute (0-59)
+getMonth() returns the current month as a number (0-11)
+parse —  It returns the number of milliseconds since January 1, 1970 from a string representation of a date.
+getDay() returns a number representing the weekday (0-6)
+getFullYear() returns the current year as a four-digit value (yyyy)
+getHours() — Returns the current hour (0-23)
+getSeconds() — Returns the second number (0-59)
+Setting a Part of the Dates: We can set a part of the dates in JavaScript using the following methods:
+setDate() — Returns the current date as a number (1-31)
+setFullYear() — This function sets the year (optionally month and day)
+setMonth() — This function sets the month (0-11)
+setSeconds() — This function sets the seconds (0-59)
+setTime() — This function is used to set the time (milliseconds since January 1, 1970)
+setMinutes() — This function sets the minutes (0-59)
+setUTCDate() — According to universal time, sets the day of the month for a given date (also available for day, month, full-year, hours, minutes etc.)
+setHours() — Changes the time (0-23)
+setMilliseconds() — This function sets the milliseconds (0-999)
