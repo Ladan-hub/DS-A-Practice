@@ -2631,3 +2631,62 @@ setMinutes() — This function sets the minutes (0-59)
 setUTCDate() — According to universal time, sets the day of the month for a given date (also available for day, month, full-year, hours, minutes etc.)
 setHours() — Changes the time (0-23)
 setMilliseconds() — This function sets the milliseconds (0-999)
+
+
+17. JavaScript Browser Objects
+
+JavaScript is also capable of taking note of the user's browser activity and incorporating its properties into the code, in addition to HTML elements.
+
+Given below is a list of Window properties that JavaScript can take into account:
+history — Provides the window's History object.
+innerHeight — The content area of a window's inner height.
+innerWidth — The content area's inner width.
+closed — Returns true or false depending on whether or not a window has been closed.
+pageXOffset — The number of pixels offset from the centre of the page. The current document has been horizontally scrolled.
+pageYOffset — The number of pixels offset from the centre of the page. The document has been vertically scrolled.
+navigator — Returns the window's Navigator object.
+opener — Returns a reference to the window that created the window.
+outerHeight — A window's total height, including toolbars and scrollbars.
+outerWidth — A window's outside width, including toolbars and scrollbars.
+defaultStatus — Changes or restores the default text in a window's status bar.
+document — Returns the window's document object.
+frames — All <iframe> elements in the current window are returned by frames.
+length — Determine how many iframe> elements are in the window.
+location — Returns the window's location object.
+name — Sets or retrieves a window's name.
+parent — The current window's parent window is called parent.
+screen — Returns the window's Screen object.
+screenLeft — The window's horizontal coordinate (relative to the screen)
+screenTop — The window's vertical coordinate.
+self — Returns the window that is currently open.
+status — Changes or restores the text in a window's status bar.
+top — Returns the browser window that is currently at the top of the screen.
+screenX — Identical to screenLeft, but required by some browsers
+screenY — Identical to screenTop, but required by some browsers
+Given below are the JavaScript methods which can work on the user's browser window:
+alert() — Shows a message and an OK button in an alert box.
+setInterval() — Calls a function or evaluates an expression at intervals defined by the user.
+setTimeout() — After a specified interval, calls a function or evaluates an expression.
+clearInterval() — Removes a timer that was started with setInterval() ()
+clearTimeout() — Removes the timer that was set with setTimeout() ()
+open() — This method creates a new browser window.
+print() — Prints the current window's content.
+blur() — Removes the current window's focus.
+moveBy() — Repositions a window with respect to its present position.
+moveTo() — This function moves a window to a specific location.
+close() — This function closes the currently open window.
+confirm() — Shows a dialogue box with a message and buttons to OK and Cancel.
+focus() — Sets the current window's focus.
+scrollBy() — Scrolls the document by a certain amount of pixels.
+scrollTo() — Scrolls the document to the supplied coordinates with the scrollTo() method.
+prompt() — Shows a conversation window asking for feedback from the visitor.
+resizeBy() — Resizes the window by the number of pixels supplied.
+resizeTo() — Resizes the window to the width and height supplied.
+stop() — This function prevents the window from loading.
+Given below is a list of Screen properties that JavaScript can take into account:
+height — The screen's entire height.
+pixelDepth — The screen's colour resolution in bits per pixel.
+width — The screen's entire width.
+colorDepth — Gets the colour palette's bit depth for showing images.
+availableHeight — Returns the screen's height (excluding the Windows Taskbar).
+availableWidth — Returns the screen's width (excluding the Windows Taskbar).
