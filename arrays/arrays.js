@@ -2690,3 +2690,97 @@ width — The screen's entire width.
 colorDepth — Gets the colour palette's bit depth for showing images.
 availableHeight — Returns the screen's height (excluding the Windows Taskbar).
 availableWidth — Returns the screen's width (excluding the Windows Taskbar).
+
+
+18. JavaScript Events
+
+Things that can happen to HTML components and are executed by the user in JavaScript are called events. These events can be detected by the programming language, which can then be used to activate code actions. Without them, no JavaScript cheat sheet would be complete. Let us take a look at some of the events supported by JavaScript:
+
+Mouse Events:
+onclick – When a user clicks on an element, an event is triggered.
+oncontextmenu — When a user right-clicks on an element, a context menu appears.
+ondblclick — When a user double-clicks on an element, it is called ondblclick.
+onmousedown — When a user moves their mouse over an element, it is called onmousedown.
+onmouseenter — The mouse pointer is moved to a certain element.
+onmouseleave — The pointer leaves an element.
+onmousemove — When the pointer is over an element, it moves.
+onmouseover  — When the cursor is moved onto an element or one of its descendants, the term onmouseover is used.
+onmouseout — When the user moves the mouse cursor away from an element or one of its descendants, it is called onmouseout.
+onmouseup — When a user releases a mouse button while hovering over an element, it is known as onmouseup.
+Form Events:
+onblur — When an element loses focus, it is called onblur.
+onchange — A form element's content changes. (for the input>, select>, and textarea> elements)
+onfocus – An aspect is brought into focus.
+onfocusin — When an element is ready to become the centre of attention.
+onfocusout —The element is about to lose focus.
+oninput — When a user inputs something into an element, it's called oninput.
+oninvalid — If an element isn't valid, it's called oninvalid.
+onreset — The state of a form is reset.
+onsearch — A user enters text into a search field (for input="search">).
+onselect — The user chooses some text (input> and textarea>).
+onsubmit — A form is filled out and submitted.
+Drag Events:
+ondrag — When an element is dragged, it is called ondrag.
+ondragend — The element has been dragged to its final position.
+ondragenter — When a dragged element enters a drop target, it is called ondragenter.
+ondragleave — When a dragged element departs the drop target, it is called ondragleave.
+ondragover — The dropped element is on top of the dragged element.
+ondragstart — The user begins dragging an element.
+ondrop — When a dragged element is dropped on a drop target, it is called ondrop.
+Keyboard Events:
+onkeydown — When the user presses a key down
+onkeypress — When the user begins to press a key.
+onkeyup — A key is released by the user.
+Frame Events:
+onabort — The loading of a media is aborted with onabort.
+onerror — When loading an external file, an error occurs.
+onpagehide – When a user leaves a webpage, it is called onpagehide.
+onpageshow — When the user navigates to a webpage
+onhashchange — The anchor component of a URL has been changed.
+onload — When an object has loaded
+onresize — The document view gets resized when onresize is called.
+onscroll — The scrollbar of an element is being scrolled.onbeforeunload — Before the document is due to be emptied, an event occurs.
+onunload — When a page is emptied, this event occurs.
+Animation Events:
+animationstart — The animation in CSS has begun.
+animationend — When a CSS animation is finished, it is called animationend.
+animationiteration — CSS animation is repeated using animationiteration.
+Clipboard Events:
+oncut — The content of an element is cut by the user.
+onpaste — When a user pastes material into an element, it is called onpaste.
+oncopy — The content of an element is copied by the user.
+Media Events:
+onloadeddata — Media data has been loaded
+onloadedmetadata — Metadata is loaded (such as size and duration).
+onloadstart — The browser begins looking for the media that has been specified.
+onabort — The loading of media has been halted.
+onerror — When an error occurs while loading an external file, the event onerror is triggered.
+onpause — Media is paused, either manually or automatically, by the user.
+onplay — The video or audio has begun or is no longer paused.
+onstalled — The browser is attempting to load the media, but it is not currently accessible.
+oncanplay — The browser has the ability to begin playing media (e.g. a file has buffered enough)
+oncanplaythrough — The browser is capable of playing media without pausing.
+ondurationchange — The media's duration changes.
+onended — The media's time has come to an end.
+onsuspend — The browser is not loading media on purpose.
+ontimeupdate — The situation has shifted (e.g. because of fast forward)
+onvolumechange — The volume of the media has changed (including mute)
+onwaiting — The media has taken a break, but it is anticipated to resume soon (for example, buffering)
+onplaying — Media that has been paused or halted for buffering is now playing.
+onprogress — The media is being downloaded by the browser.
+onratechange — The media's playback speed changes.
+onseeking — The user begins to move/skip.
+Miscellaneous Events:
+transitionend — When a CSS transition is complete, this event is triggered.
+onmessage — The event source has received a message.
+onpopstate — When the history of the window changes
+onshow — A <menu> element is shown as a context menu when it is onshow.
+onoffline — The browser switches to offline mode.
+ononline — The browser enters the online mode.
+ontouchcancel — The user's ability to touch the screen has been halted.
+ontouchstart — The touch-screen is activated by placing a finger on it.
+onstorage — An part of Web Storage has been upgraded.
+ontoggle — The user toggles the details> element open or closed.
+onwheel — The mouse wheel moves up and down when it passes over an element.
+ontouchend — A touch-screen user's finger is withdrawn.
+ontouchmove — When a finger is dragged over the screen, it is called ontouchmove.
