@@ -2827,3 +2827,23 @@ Event loop: An event loop is something that pulls various things like methods, e
 
 
 22. JavaScript Error Handling
+
+Various types of errors occur when we are coding in JavaScript. There are a few options for dealing with them:
+
+try — We can define a code block for testing errors using the try block.
+catch — We can set up a block of code to execute in the event of an error using the catch statement. 
+throw — Instead of the typical JavaScript errors, we can also create custom error messages using the throw statement.
+finally — JavaScript also allows us to run our code regardless of the outcome of try and catch.
+JavaScript possesses its own inbuilt error object which has the following properties:
+
+name — It is used for setting or returning an error name.
+message — It is used for setting or returning the error message as a string.
+There are six types of ways in which the error property can return its name. They are as follows:
+
+EvalError — It indicates that an error has occurred within the eval() method.
+RangeError — It indicates that some number is “out of range”.
+ReferenceError —  It indicates that an illegal reference was occurring.
+SyntaxError —  It indicates that a syntax error was occurring.
+TypeError —  It indicates that a type error was occurring.
+URIError —  It indicates that an encodeURI() error was occurring.
+
