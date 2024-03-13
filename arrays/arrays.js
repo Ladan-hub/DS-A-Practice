@@ -2798,3 +2798,29 @@ The Bubbling Phase: From the target element up to the Window, the DOM tree visit
 
 
 21. JavaScript Memory Allocation and Event Loop
+
+In JavaScript, memory allocation is done in the following regions:
+
+Heap memory: Data is stored in random order and memory is allocated accordingly.
+
+Stack memory: Memory that is allocated in stacks. The majority of the time, it's employed for functions.
+
+The function stack is a function that maintains track of all other functions that are running at the same time. An example to illustrate it is as follows:
+
+function second() {
+console.log("Second")
+}
+function First() {
+second()
+}
+function foo() {
+first()
+}
+foo()
+The order in which functions are executed, that is. when they are popped out of the stack once their purpose is completed, is as follows:
+
+console.log
+second
+first
+foo
+Event loop: An event loop is something that pulls various things like methods, etc. out of the queue and places it onto the function execution stack whenever the function stack becomes empty. The event loop is the trick to making JavaScript appear multithreaded even if it is only single-threaded. The following illusion clearly explains how the event loop works:
