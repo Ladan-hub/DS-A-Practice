@@ -2824,3 +2824,6 @@ second
 first
 foo
 Event loop: An event loop is something that pulls various things like methods, etc. out of the queue and places it onto the function execution stack whenever the function stack becomes empty. The event loop is the trick to making JavaScript appear multithreaded even if it is only single-threaded. The following illusion clearly explains how the event loop works:
+
+
+22. JavaScript Error Handling
