@@ -256,3 +256,7 @@ numList.add(new Node(7));
 numList.displayList();
 
 
+// 2. Write a JavaScript program to create a singly linked list of n nodes and display it in reverse order.
+
+
+
